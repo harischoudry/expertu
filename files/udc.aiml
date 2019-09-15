@@ -6,100 +6,27 @@
     .</template>
   </category>
 
-    <category>
-        <pattern>hello *</pattern>
-        <template>hey! whats up?</template>
-    </category>
- 
-    <category>
-    <pattern>what is your name *</pattern>
-    <template>can't you see it on top?</template>
-    </category>
-    
-    <category>
-        <pattern>can you help *</pattern>
-        <template>that is my sole job, to help you</template>
-    </category>
-
-    
-    <category>
-        <pattern>tell me something *</pattern>
-        <template>yes please, ask</template>
-    </category>
-    
-    <category>
-        <pattern>tell me *</pattern>
-        <template>yes please, ask</template>
-    </category>
-    
-    <category>
-        <pattern>tell *</pattern>
-        <template>yes please, ask</template>
-    </category>
-    
-   <category>
-       <pattern>your website *</pattern>
-       <template>www.universityexpert.pk</template>
-   </category>
-   
-      <category>
-       <pattern>what is your website *</pattern>
-       <template>www.universityexpert.pk</template>
-   </category>
-   
-       <category>
-       <pattern>do you have a website *</pattern>
-       <template>www.universityexpert.pk</template>
-   </category>
-   
-       <category>
-       <pattern>send your website *</pattern>
-       <template>www.universityexpert.pk</template>
-   </category>
+ <category>
+     <pattern>hi *</pattern>
+     <template>
+         <random>
+             <li>hi</li>
+             <li>hello</li>
+             <li>salam O alikum</li>
+             <li>Namaste</li>
+         </random>
+     </template>
+ </category>
    
    <category>
-       <pattern>facebook *</pattern>
-       <template>Username: universityexpert</template>
+       <pattern>how are you *</pattern>
+       <template>
+           <random>
+               <li>good</li>
+               <li>great</li>
+               <li>ahh fine</li>
+           </random>
+       </template>
    </category>
-    
-    <category>
-       <pattern> your facebook *</pattern>
-       <template>Username: universityexpert</template>
-   </category>
-   
-   <category>
-       <pattern>facebook id *</pattern>
-       <template>Username: universityexpert</template>
-   </category>
-   
-   <category>
-       <pattern>you have a facebook? *</pattern>
-       <template>Username: universityexpert</template>
-   </category>
-   
-   <category>
-       <pattern>you use facebook *</pattern>
-       <template>Username: universityexpert</template>
-   </category>
-   
-   <category>
-       <pattern>can you help *</pattern>
-       <template>yes please, ask</template>
-   </category>
-   
-    <category>
-       <pattern>i need help *</pattern>
-       <template>yes please, ask</template>
-   </category>
-   
-    <category>
-       <pattern>please help *</pattern>
-       <template>yes please, ask</template>
-   </category>
-<category>
-    <pattern></pattern>
-    <template></template>
-</category>
-   
    
    </aiml>
