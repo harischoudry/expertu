@@ -7,7 +7,7 @@
   </category>
 
  <category>
-     <pattern>hi *</pattern>
+     <pattern>hi</pattern>
      <template>
          <random>
              <li>hi</li>
@@ -19,7 +19,7 @@
  </category>
    
    <category>
-       <pattern>how are you *</pattern>
+       <pattern>how are you</pattern>
        <template>
            <random>
                <li>good</li>
