@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>Ohh Please ask me questions releveant only to admissions
+    .</template>
+  </category>
+
+    <category>
+    <pattern>hello *</pattern>
+    <template>hey! whats up? </template>
+    </category>
+    
+    <category>
+    <pattern>what is your name *</pattern>
+    <template>can't you see it on top?</template>
+    </category>
+
+    <category>
+    <pattern>can you help </pattern>
+    <template>that is my job</template>
+    </category>
+ 
+</aiml>
