@@ -1,32 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
+    <category>
+   <pattern>Hello</pattern>
+   <template>
+       <random>
+         
+         
+          <li>Hi</li>
+          <li>Salam O Alikum</li>
+          <li>Heyyy</li>
+          <li>Hello</li>
+           
+       </random>
+       
+      </template>
+</category>
+
+<category>
+   <pattern>Hi</pattern>
+   <template><srai>Hello</srai></template>
+</category>
+<category>
+   <pattern>Hy</pattern>
+   <template><srai>Hello</srai></template>
+</category>
+<category>
+   <pattern>Hi</pattern>
+   <template><srai>Hello</srai></template>
+</category>
+    <category>
+   <pattern>Hey</pattern>
+   <template><srai>Hello</srai></template>
+</category>
   <category>
     <pattern>*</pattern>
-    <template>Ohh Please ask me questions releveant only to admissions
-    .</template>
+    <template>Sorry!I have no answer for that.</template>
   </category>
+ 
+  <category>
+   <pattern>how are you</pattern>
+   <template>I'm Good How are you doing ?</template>
+</category>
+    <category>
+   <pattern>what's up</pattern>
+   <template>Nothing</template>
+</category>
 
- <category>
-     <pattern>hi</pattern>
-     <template>
-         <random>
-             <li>hi</li>
-             <li>hello</li>
-             <li>salam O alikum</li>
-             <li>Namaste</li>
-         </random>
-     </template>
- </category>
-   
+<category>
+   <pattern>My name is *</pattern>
+   <template>I know your name is <set name= "username"><star/></set></template>
+</category>
+
+    <category>
+   <pattern>what are you</pattern>
+   <template>
+       Well
+       <button>
+           <text>Wanna know me?</text>
+           <postback>knowme</postback>
+       </button>
+   </template>
+</category>
+
+
+
+<category>
+   <pattern>knowme</pattern>
+   <template>I'm a chatbot created by Haris</template>
+</category>
+<category>
+   <pattern>do you know me</pattern>
+   <template>yes your name is <get name= "username" /></template>
+</category>
+<category>
+   <pattern>what is my name</pattern>
+   <template> <get name= "username" /></template>
+</category>
+
+
    <category>
-       <pattern>how are you</pattern>
-       <template>
-           <random>
-               <li>good</li>
-               <li>great</li>
-               <li>ahh fine</li>
-           </random>
-       </template>
+      <pattern>I LIKE *</pattern>
+      <template>
+         I too like <star/>.
+      </template>
+   </category>
+
+<category>
+      <pattern>WHAT ABOUT MOVIES</pattern>
+      <template>Do you like comedy movies</template>  
    </category>
    
-   </aiml>
+   <category>
+      <pattern>YES</pattern>
+      <that>Do you like comedy movies</that>
+      <template>Nice, I like comedy movies too.</template>
+   </category>
+   
+   <category>
+      <pattern>NO</pattern>
+      <that>Do you like comedy movies</that>
+      <template>Ok! But I like comedy movies.</template>
+   </category> 
+   
+<category>
+      <pattern>My name is *</pattern>
+      <template>
+         Hello!<think><set name = "username"> <star/></set></think>
+      </template>  
+   </category>  
+   
+   <category>
+      <pattern>Byeee</pattern>
+      <template>
+         By <get name = "username"/> Thanks for the conversation!
+      </template>  
+   </category>  
+ 
+   <category>
+      <pattern> WHO IS ALBERT EINSTEIN </pattern>
+      <template>Albert Einstein was a German physicist.</template>
+   </category>
+   
+   <category>
+      <pattern> WHO IS Isaac NEWTON </pattern>
+      <template>Isaac Newton was a English physicist and mathematician.</template>
+   </category>
+   
+   <category>
+      <pattern>DO YOU KNOW WHO * IS</pattern>
+      <template>
+         <srai>WHO IS <star/></srai>
+      </template>
+   </category>
+
+<category>
+      <pattern>LET DISCUSS MOVIES</pattern>
+      <template>Yes <set name = "topic">movies</set></template>  
+   </category>
+   
+   <topic name = "movies">
+      <category>
+         <pattern> * </pattern>
+         <template>Watching good movie refreshes our minds.</template>
+      </category>
+      
+      <category>
+         <pattern> I LIKE WATCHING COMEDY! </pattern>
+         <template>I like comedy movies too.</template>
+      </category>
+      
+   </topic>
+</aiml>
