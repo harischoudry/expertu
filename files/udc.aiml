@@ -130,13 +130,13 @@
    <category>
       <pattern>YES</pattern>
       <that>Do you like Studying</that>
-      <template>Nice, I like universities too.</template>
+      <template>Nice, I like studying too.</template>
    </category>
    
    <category>
       <pattern>NO</pattern>
       <that>Do you like Studying</that>
-      <template>Ok! But I like universities</template>
+      <template>Ok! But I like studying</template>
    </category> 
    
 <category>
@@ -147,46 +147,19 @@
    </category>  
    
    <category>
+         <pattern>admission</pattern>
+         <template>for any query regarding admisssion visit 
+         www.universityexpert.pk fill a simple form and our team will contact you.</template>
+      </category>
+   
+   <category>
       <pattern>Byeee</pattern>
       <template>
          By <get name = "username"/> Thanks for the conversation!
       </template>  
    </category>  
- 
-   <category>
-      <pattern> when will bachelors admission open </pattern>
-      <template>In upcoming spring .</template>
-   </category>
    
-   <category>
-      <pattern> when will bachelors admission open </pattern>
-      <template>In upcoming spring.</template>
-   </category>
    
-   <category>
-      <pattern>DO YOU KNOW WHO * IS</pattern>
-      <template>
-         <srai>WHO IS <star/></srai>
-      </template>
-   </category>
-
-<category>
-      <pattern>LET DISCUSS UNIVERSITIES</pattern>
-      <template>Yes <set name = "topic">universities</set></template>  
-   </category>
-   
-   <topic name = "universities">
-      <category>
-         <pattern> * </pattern>
-         <template>getting admission in a good university is really difficult  now a days</template>
-      </category>
-      
-      <category>
-         <pattern>admission</pattern>
-         <template>for any query regarding admisssion visit 
-         www.universityexpert.pk fill a simple form and our team will contact you.</template>
-      </category>
-      
        <category>
          <pattern>i need admission information</pattern>
          <template>for any query regarding admisssion visit 
@@ -228,5 +201,36 @@
          <template>for any query regarding admisssion visit 
          www.universityexpert.pk fill a simple form and our team will contact you.</template>
       </category>
+ 
+   <category>
+      <pattern> when will bachelors admission open </pattern>
+      <template>In upcoming spring .</template>
+   </category>
+   
+   <category>
+      <pattern> when will bachelors admission open </pattern>
+      <template>In upcoming spring.</template>
+   </category>
+   
+   <category>
+      <pattern>DO YOU KNOW WHO * IS</pattern>
+      <template>
+         <srai>WHO IS <star/></srai>
+      </template>
+   </category>
+
+<category>
+      <pattern>LET DISCUSS UNIVERSITIES</pattern>
+      <template>Yes <set name = "topic">universities</set></template>  
+   </category>
+   
+   <topic name = "universities">
+      <category>
+         <pattern> * </pattern>
+         <template>getting admission in a good university is really difficult  now a days</template>
+      </category>
+      
+      
+      
    </topic>
 </aiml>
