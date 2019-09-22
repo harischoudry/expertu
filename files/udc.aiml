@@ -18,6 +18,22 @@
 
 <category>
    <pattern>Hi</pattern>
+   <template>
+       <random>
+         
+         
+          <li>Hi</li>
+          <li>Salam O Alikum</li>
+          <li>Heyyy</li>
+          <li>Hello</li>
+           
+       </random>
+       
+      </template>
+</category>
+
+<category>
+   <pattern>Hi</pattern>
    <template><srai>Hello</srai></template>
 </category>
 <category>
@@ -62,11 +78,32 @@
    </template>
 </category>
 
+<category>
+   <pattern>who are you</pattern>
+   <template>
+       Well
+       <button>
+           <text>Wanna know me?</text>
+           <postback>knowme</postback>
+       </button>
+   </template>
+</category>
 
+<category>
+   <pattern>who made you</pattern>
+   <template>
+       Well
+       <button>
+           <text>Wanna know me?</text>
+           <postback>knowme</postback>
+       </button>
+   </template>
+</category>
 
 <category>
    <pattern>knowme</pattern>
-   <template>I'm a chatbot created by Haris</template>
+   <template>I'm a chatbot created by Team University 
+   Expert </template>
 </category>
 <category>
    <pattern>do you know me</pattern>
@@ -86,20 +123,20 @@
    </category>
 
 <category>
-      <pattern>WHAT ABOUT MOVIES</pattern>
-      <template>Do you like comedy movies</template>  
+      <pattern>WHAT ABOUT UNIVERSITIES</pattern>
+      <template>Do you like Studying</template>  
    </category>
    
    <category>
       <pattern>YES</pattern>
-      <that>Do you like comedy movies</that>
-      <template>Nice, I like comedy movies too.</template>
+      <that>Do you like Studying</that>
+      <template>Nice, I like universities too.</template>
    </category>
    
    <category>
       <pattern>NO</pattern>
-      <that>Do you like comedy movies</that>
-      <template>Ok! But I like comedy movies.</template>
+      <that>Do you like Studying</that>
+      <template>Ok! But I like universities</template>
    </category> 
    
 <category>
@@ -117,13 +154,13 @@
    </category>  
  
    <category>
-      <pattern> WHO IS ALBERT EINSTEIN </pattern>
-      <template>Albert Einstein was a German physicist.</template>
+      <pattern> when will bachelors admission open </pattern>
+      <template>In upcoming spring .</template>
    </category>
    
    <category>
-      <pattern> WHO IS Isaac NEWTON </pattern>
-      <template>Isaac Newton was a English physicist and mathematician.</template>
+      <pattern> when will bachelors admission open </pattern>
+      <template>In upcoming spring.</template>
    </category>
    
    <category>
@@ -134,20 +171,62 @@
    </category>
 
 <category>
-      <pattern>LET DISCUSS MOVIES</pattern>
-      <template>Yes <set name = "topic">movies</set></template>  
+      <pattern>LET DISCUSS UNIVERSITIES</pattern>
+      <template>Yes <set name = "topic">universities</set></template>  
    </category>
    
-   <topic name = "movies">
+   <topic name = "universities">
       <category>
          <pattern> * </pattern>
-         <template>Watching good movie refreshes our minds.</template>
+         <template>getting admission in a good university is really difficult  now a days</template>
       </category>
       
       <category>
-         <pattern> I LIKE WATCHING COMEDY! </pattern>
-         <template>I like comedy movies too.</template>
+         <pattern>admission</pattern>
+         <template>for any query regarding admisssion visit 
+         www.universityexpert.pk fill a simple form and our team will contact you.</template>
       </category>
       
+       <category>
+         <pattern>i need admission information</pattern>
+         <template>for any query regarding admisssion visit 
+         www.universityexpert.pk fill a simple form and our team will contact you.</template>
+      </category>
+      
+       <category>
+         <pattern>upcoming admission</pattern>
+         <template>for any query regarding admisssion visit 
+         www.universityexpert.pk fill a simple form and our team will contact you.</template>
+      </category>
+      
+       <category>
+         <pattern>how to get admission admission</pattern>
+         <template>for any query regarding admisssion visit 
+         www.universityexpert.pk fill a simple form and our team will contact you.</template>
+      </category>
+      
+       <category>
+         <pattern>i want to take admission</pattern>
+         <template>for any query regarding admisssion visit 
+         www.universityexpert.pk fill a simple form and our team will contact you.</template>
+      </category>
+      
+       <category>
+         <pattern>fall admission</pattern>
+         <template>for any query regarding admisssion visit 
+         www.universityexpert.pk fill a simple form and our team will contact you.</template>
+      </category>
+      
+       <category>
+         <pattern>spring admission</pattern>
+         <template>for any query regarding admisssion visit 
+         www.universityexpert.pk fill a simple form and our team will contact you.</template>
+      </category>
+       <category>
+           
+         <pattern>admissions information</pattern>
+         <template>for any query regarding admisssion visit 
+         www.universityexpert.pk fill a simple form and our team will contact you.</template>
+      </category>
    </topic>
 </aiml>
