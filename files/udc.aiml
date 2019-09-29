@@ -161,7 +161,7 @@
    
    <category>
          <pattern>admission</pattern>
-         <template>for any query regarding admisssion visit 
+         <template>for any query regarding admission visit 
          www.universityexpert.pk fill a simple form and our team will contact you.
          </template>
     </category>
@@ -176,14 +176,14 @@
    
        <category>
          <pattern>i need admission information</pattern>
-         <template>for any query regarding admisssion visit 
+         <template>for any query regarding admission visit 
          www.universityexpert.pk fill a simple form and our team will contact you.
          </template>
       </category>
       
        <category>
          <pattern>upcoming admission</pattern>
-         <template>for any query regarding admisssion visit 
+         <template>for any query regarding admission visit 
          www.universityexpert.pk fill a simple form and our team will contact you.
          </template>
       </category>
@@ -196,14 +196,14 @@
       
        <category>
          <pattern>spring admission</pattern>
-         <template>for any query regarding admisssion visit 
+         <template>for any query regarding admission visit 
          www.universityexpert.pk fill a simple form and our team will contact you.
          </template>
       </category>
        <category>
            
          <pattern>admissions information</pattern>
-         <template>for any query regarding admisssion visit 
+         <template>for any query regarding admission visit 
          www.universityexpert.pk fill a simple form and our team will contact you
          .</template>
       </category>
@@ -307,6 +307,30 @@
     </template>
    </category>
    
+   
+   <category>
+   <pattern>Closing Merit</pattern>
+   <template>
+       Well here you go!
+       <button>
+           <text>Wanna know Closing Merits?</text>
+           <postback>Click here</postback>
+       </button>
+   </template>
+   </category>
+
+   <category>
+   <pattern>Click here</pattern>
+   
+   <template>NUST = CS: 71.02% , Engineering = 80.12% <br></br>
+             FAST =  CS: 78.02% , Engineering = 72.12% <br></br>
+             PU =  sorry! Not Avalible <br></br>
+             UCP =  CS: 51.02% , Engineering = 59.12%  <br></br>
+            COMSATS =  CS: 79.02% , Engineering = 73.12%
+    </template>
+   </category>
+   
+   
    <category>
       <pattern> HOW ARE YOU FEELING </pattern>
       
@@ -323,4 +347,44 @@
       
    </category>
    
+   <category>
+       <pattern>COMSATS</pattern>
+       <template>COMSATS University Islamabad, Lahore Campus<br></br>
+       (042) 111 001 007 <br></br>
+       Address: 1.5 KM Defence RoadØ Off Raiwand Rd, Lda Avenue Phase 1 Lda Avenue, Lahore, Punjab 54000<br></br>
+       Speciality: CS</template>
+   </category>
+   
+   <category>
+       <pattern>FAST</pattern>
+       <template>FAST NUCES Lahore Campus<br></br>
+       Phone: (042) 111 128 128 <br></br>
+       Address: 852-B Milaad St, Block B Faisal Town, Lahore, Punjab 54000<br></br>
+       Speciality: CS</template>
+   </category>
+   
+   <category>
+       <pattern>PU</pattern>
+        <template>University of the Punjab<br></br>
+       Phone: (042) 99231098<br></br>
+       Address: Canal Rd, Quaid-i-Azam Campus, Lahore, Punjab<br></br>
+       Speciality: Engineering, CS and Arts</template>
+   </category>
+   
+   <category>
+       <pattern>UCP</pattern>
+        <template>University of Central Punjab<br></br>
+       Phone: (042) 35880007<br></br>
+       Address: Avenue 1, Khayaban-e-JinnahØ RoadØ Johar Town, Lahore, Punjab<br></br>
+       Speciality: Business</template>
+   </category>
+   
+
+   <category>
+       <pattern>NUST</pattern>
+      <template>National University of Sciences Technology<br></br>
+       Phone: (042) 35880007<br></br>
+       Address: Sector H-12 Islamabad<br></br>
+       Speciality:Engineering</template>
+   </category>
 </aiml>
