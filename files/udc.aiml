@@ -33,6 +33,10 @@
 </category>
 
 <category>
+    <pattern>what is your name</pattern>
+    <template>Expertu</template>
+</category>
+<category>
    <pattern>Hi</pattern>
    <template><srai>Hello</srai></template>
 </category>
@@ -50,7 +54,7 @@
 </category>
   <category>
     <pattern>*</pattern>
-    <template>Sorry!I have no answer for that.</template>
+    <template>I only answer FAQS about www.universityexpert.pk </template>
   </category>
  
   <category>
@@ -90,6 +94,8 @@
 </category>
 
 <category>
+    
+
    <pattern>who made you</pattern>
    <template>
        Well
@@ -105,6 +111,13 @@
    <template>I'm a chatbot created by Team University 
    Expert </template>
 </category>
+
+<category>
+    <pattern>what is your purpose</pattern>
+    <template>to Guide you about University and admissions  of pakistani Universities
+    </template>
+</category>
+
 <category>
    <pattern>do you know me</pattern>
    <template>yes your name is <get name= "username" /></template>
@@ -149,8 +162,9 @@
    <category>
          <pattern>admission</pattern>
          <template>for any query regarding admisssion visit 
-         www.universityexpert.pk fill a simple form and our team will contact you.</template>
-      </category>
+         www.universityexpert.pk fill a simple form and our team will contact you.
+         </template>
+    </category>
    
    <category>
       <pattern>Byeee</pattern>
@@ -163,25 +177,15 @@
        <category>
          <pattern>i need admission information</pattern>
          <template>for any query regarding admisssion visit 
-         www.universityexpert.pk fill a simple form and our team will contact you.</template>
+         www.universityexpert.pk fill a simple form and our team will contact you.
+         </template>
       </category>
       
        <category>
          <pattern>upcoming admission</pattern>
          <template>for any query regarding admisssion visit 
-         www.universityexpert.pk fill a simple form and our team will contact you.</template>
-      </category>
-      
-       <category>
-         <pattern>how to get admission admission</pattern>
-         <template>for any query regarding admisssion visit 
-         www.universityexpert.pk fill a simple form and our team will contact you.</template>
-      </category>
-      
-       <category>
-         <pattern>i want to take admission</pattern>
-         <template>for any query regarding admisssion visit 
-         www.universityexpert.pk fill a simple form and our team will contact you.</template>
+         www.universityexpert.pk fill a simple form and our team will contact you.
+         </template>
       </category>
       
        <category>
@@ -193,13 +197,15 @@
        <category>
          <pattern>spring admission</pattern>
          <template>for any query regarding admisssion visit 
-         www.universityexpert.pk fill a simple form and our team will contact you.</template>
+         www.universityexpert.pk fill a simple form and our team will contact you.
+         </template>
       </category>
        <category>
            
          <pattern>admissions information</pattern>
          <template>for any query regarding admisssion visit 
-         www.universityexpert.pk fill a simple form and our team will contact you.</template>
+         www.universityexpert.pk fill a simple form and our team will contact you
+         .</template>
       </category>
  
    <category>
@@ -227,10 +233,94 @@
    <topic name = "universities">
       <category>
          <pattern> * </pattern>
-         <template>getting admission in a good university is really difficult  now a days</template>
+         <template>getting admission in a good university is really difficult  now a days
+         </template>
       </category>
       
-      
-      
    </topic>
+   
+   <category>
+       <pattern>Admission information about NUST</pattern>
+       <template>Admission Test are opened in NUST three times every year and you can 
+       give all of them. Next intake will start on December 2019. Dont forget to apply through us.
+       Applying fee is 3000 PKR only.
+       </template>
+   </category>
+   
+   <category>
+       <pattern>Admission information about COMSATS</pattern>
+       <template>Admission Test are opened in COMSATS two times every year and you can 
+       give both of them. Next intake will start on January 2020. Dont forget to apply through us.
+       </template>
+   </category>
+   
+   
+   <category>
+       <pattern>Admission information about FAST</pattern>
+       <template>Admission Test are opened in FAST only once ayear and you can 
+       apply with atlesast 60% in Intermediate. Next intake will start on May 2020. Dont forget to apply through us.
+       </template>
+   </category>
+   
+     <category>
+       <pattern>Admission information about PU</pattern>
+       <template>Admission Test are opened in PU only once ayear and you can 
+       apply with atlesast 60% in Intermediate. Next intake will start on May 2020. Dont forget to apply through us.
+       And yes Merit is also very  high so your marks better be good
+       </template>
+   </category>
+   
+   <category>
+       <pattern>Admission information about UCP</pattern>
+       <template>Admission Test are opened in UCP only once ayear and you can 
+       apply with atlesast 60% in Intermediate. Next intake will start on May 2020. Dont forget to apply through us.
+       And yes Merit is very low so just take it easy
+       </template>
+   </category>
+   
+   <category>
+       <pattern>Do you know information about * </pattern>
+       <template>
+           <srai>Admission information about <star/></srai>
+       </template>
+   </category>
+   
+   <category>
+   <pattern>Fee structure</pattern>
+   <template>
+       Well here you go!
+       <button>
+           <text>Wanna know fee Structure?</text>
+           <postback>Click here</postback>
+       </button>
+   </template>
+   </category>
+
+   <category>
+   <pattern>Click here</pattern>
+   
+   <template>NUST = 80,000 to 100,000 per semester <br></br>
+             FAST = 100,000 to 140,000 per semester <br></br>
+             PU = 30,000 to 50,000 per semester  <br></br>
+             UCP = 90,000 to 170,000 per semester  <br></br>
+             COMSTAS = 85,000 to 120,000 per semester
+    </template>
+   </category>
+   
+   <category>
+      <pattern> HOW ARE YOU FEELING </pattern>
+      
+      <template>
+         <think><set name = "state"> happy</set></think>
+         <condition name = "state" value = "happy">
+            I am happy but you should be worried about your admission!
+         </condition>
+         
+         <condition name = "state" value = "sad">
+            I am never sad!
+         </condition>
+      </template>
+      
+   </category>
+   
 </aiml>
